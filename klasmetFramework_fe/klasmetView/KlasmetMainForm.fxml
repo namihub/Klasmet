@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700" prefWidth="800" style="-fx-background-color: black; -fx-background-image: url(klasmetFramework_fe/klasmetView/Image/wolf.png); -fx-background-repeat: stretch; -fx-background-position: center center;" stylesheets="@darkTheme2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="emeruxclient.KlasmetPresenterMain">
+    <children>
+        <MenuBar fx:id="klasmetMainFormMenubar" prefHeight="31.0" prefWidth="835.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false">
+                    <graphic>
+                        <Circle fx:id="connectionStatus" fill="RED" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+                    </graphic>
+                </Menu>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="menuLogin" mnemonicParsing="false" onAction="#handleMenuActionLogin" text="Login" />
+                        <MenuItem fx:id="menuAbout" mnemonicParsing="false" onAction="#handleMenuActionAbout" text="About" />
+                        <MenuItem fx:id="menuExit" mnemonicParsing="false" onAction="#handleMenuActionExit" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu fx:id="menuKlasmet" mnemonicParsing="false" text="Klasmet">
+                    <items>
+                        <MenuItem fx:id="menuAlarm" mnemonicParsing="false" onAction="#handleMenuActionAlarm" text="Alarm Monitoring Dashboard" />
+                        <MenuItem fx:id="menuSystem" mnemonicParsing="false" onAction="#handleMenuActionSystem" text="System Status" />
+                    </items>
+                </Menu>
+                <Menu fx:id="menuPerformance" mnemonicParsing="false" text="Performance">
+                    <items>
+                        <MenuItem fx:id="menuServiceStatisticsFM" mnemonicParsing="false" onAction="#handleMenuActionServiceStatisticsFM" text="FM-ServiceStatistics" />
+                        <MenuItem fx:id="menuSystemStatisticsFM" mnemonicParsing="false" onAction="#handleMenuActionSystemStatisticsFM" text="FM-SystemStatistics" />
+                        <MenuItem fx:id="menuServiceStatisticsRA" mnemonicParsing="false" onAction="#handleMenuActionServiceStatisticsRA" text="RA-ServiceStatistics" />
+                        <MenuItem fx:id="menuHardwareResources" mnemonicParsing="false" onAction="#handleMenuActionStatisticHardware" text="HardwareResources" />
+                    </items>
+                </Menu>
+                <Menu fx:id="menuReports" mnemonicParsing="false" text="Reports">
+                    <items>
+                        <Menu fx:id="menuReportsRa" mnemonicParsing="false" text="Revenue Assurance System">
+                            <items>
+                                <MenuItem fx:id="menuReportsRaHealthcheck" mnemonicParsing="false" onAction="#handleMenuActionReportsMenu_RA_Healthcheck" text="Healthcheck Report" />
+                            </items>
+                        </Menu>
+                        <Menu fx:id="menuReportsFm" mnemonicParsing="false" text="Fraud Management System">
+                            <items>
+                                <MenuItem fx:id="menuReportsFmHealthcheck" mnemonicParsing="false" onAction="#handleMenuActionReportsMenu_FM_Healthcheck" text="Healthcheck Report" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+                <Menu fx:id="menuOperations" mnemonicParsing="false" text="Operations">
+                    <items>
+                        <MenuItem fx:id="menuOperationsFM" mnemonicParsing="false" onAction="#handleMenuActionOperationsFM" text="OperationsFM" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

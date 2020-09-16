@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" stylesheets="@darkTheme2.css" prefHeight="298.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="46.0" prefWidth="200.0" text="KLASMET">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="14.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Image/wolf.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="214.0" layoutY="14.0" prefHeight="274.0" prefWidth="432.0" text="This application is developed based on Klasmet-FX framework.  &#10;A framework to develop operation support systems. &#10;Klasmet features and specification: &#10;-Modular and expandable architecture &#10;-Automatic backup solutions &#10;-Operation and maintenance facilities &#10;-Automatic troubleshooting process &#10;-Alarm monitoring &#10;Product Version: puppy wolf &#10;Java: 8 &#10;Klasmet framework is designed and developed by: &#10;Nami Masoumparast&#10;nami.mt@gmail.com" />
+   </children>
+</AnchorPane>

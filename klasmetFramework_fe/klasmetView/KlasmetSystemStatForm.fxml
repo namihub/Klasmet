@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="718.0" prefWidth="1043.0" stylesheets="@darkTheme2.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="klasmetFramework_fe.KlasmetPresenterSystemStat">
+   <children>
+      <Button fx:id="btn_refresh" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonActionRefresh" text="Refresh" />
+      <Label layoutX="14.0" layoutY="60.0" text="Server Status" />
+      <TextArea fx:id="ta_server" layoutX="14.0" layoutY="75.0" prefHeight="200.0" prefWidth="1019.0" />
+      <Label layoutX="14.0" layoutY="288.0" text="Connectors Status" />
+      <TextArea fx:id="ta_connectors" layoutX="14.0" layoutY="303.0" prefHeight="403.0" prefWidth="1019.0" />
+   </children>
+</AnchorPane>
